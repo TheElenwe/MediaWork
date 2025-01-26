@@ -141,7 +141,8 @@ nav {
 .preview-box {
     
     width: 400px;
-    height: 200px;
+    height:210px;
+    /* height: 200px; */
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -1096,6 +1097,81 @@ footer {
 
     .footer-content {
         min-width: 960px;
+    }
+}
+
+/* Asus Zenbook Fold Responsive Styles */
+@media only screen and (device-width: 853px) and (device-height: 1280px) and (orientation: portrait),
+       only screen and (device-width: 1280px) and (device-height: 853px) and (orientation: landscape) {
+    
+    body {
+        transform: scale(0.48);
+        transform-origin: center top;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scale(0.48);
+    }
+
+    .modern-grid {
+        min-width: 900px;
+        padding: 0 25px;
+    }
+
+    .style-section {
+        min-width: 880px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        padding: 25px;
+    }
+
+    .style-image {
+        height: 350px;
+        width: 45%;
+        flex-shrink: 0;
+    }
+
+    .about-content-right {
+        flex: 1;
+        text-align: left;
+        padding-left: 25px;
+        margin: 0;
+        position: static;
+    }
+
+    .about-content-right h2 {
+        font-size: 2.1rem;
+        margin-bottom: 18px;
+    }
+
+    .about-content-right .description {
+        font-size: 1.05rem;
+        margin-bottom: 22px;
+        max-width: 420px;
+    }
+
+    .collection-header {
+        min-width: 880px;
+    }
+
+    .collection-grid {
+        min-width: 880px;
+    }
+
+    .stats {
+        min-width: 880px;
+    }
+
+    .engage-content {
+        min-width: 880px;
+    }
+
+    .footer-content {
+        min-width: 880px;
     }
 }
 

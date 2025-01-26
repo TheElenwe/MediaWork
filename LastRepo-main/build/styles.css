@@ -486,11 +486,13 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
     gap: 100px;
+   
 }
 
 .engage-text {
     flex: 1;
-    max-width: 600px;
+    max-width: 600px
+  
 }
 
 .engage-text h2 {
@@ -501,9 +503,10 @@ nav {
 }
 
 .engage-text p {
-    font-size: 16px;
+    font-size: 25px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
+    /* max-width: 500px; */
     max-width: 500px;
 }
 
@@ -792,6 +795,8 @@ footer {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+
+    
    
     .about-us {
         padding: 60px 0;
@@ -810,7 +815,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  
+
+   
+    
     .about-us {
         padding: 40px 0;
     }
@@ -861,6 +868,13 @@ footer {
 
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
+
+    .engage-text p {
+
+       width:100%;
+
+         
+       }
 
     .image-container2{
         height:430px;
@@ -1168,6 +1182,7 @@ footer {
 
     .engage-content {
         min-width: 880px;
+        
     }
 
     .footer-content {
